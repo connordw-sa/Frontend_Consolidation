@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap");
+
+html,
+body {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  padding-left: 2%;
+}
+
+.jumbotron {
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(94, 12, 201);
+  display: flex;
+}
+
+.jumbotron-text {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron-img {
+  width: 30%;
+}
+
+.jumbo-img {
+  height: 100%;
+}

@@ -1,0 +1,15 @@
+.recommended-card {
+  min-height: 343px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.recommended-user-card {
+  min-height: 84px;
+}
+
+.recommended-profile-image {
+  height: 48px;
+  width: 48px;
+  background-color: green;
+}

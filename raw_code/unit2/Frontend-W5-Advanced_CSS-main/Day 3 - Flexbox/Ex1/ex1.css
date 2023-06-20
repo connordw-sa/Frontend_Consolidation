@@ -1,0 +1,52 @@
+html,
+body {
+  height: 100%;
+}
+
+#container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+header {
+  background-color: #111023;
+  height: 20%;
+  color: white;
+  padding-top: 2vh;
+  padding-left: 2vh;
+}
+
+footer {
+  background-color: #111023;
+  height: 20%;
+  color: white;
+  padding-top: 2vh;
+  padding-left: 2vh;
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+  height: 60%;
+}
+
+#Article {
+  background-color: none;
+  flex-grow: 4;
+  padding-left: 2vh;
+}
+
+#Aside {
+  background-color: #320388;
+  color: white;
+  flex-grow: 1;
+  padding-left: 2vh;
+}
+
+#Nav {
+  background-color: #c22177;
+  color: white;
+  flex-grow: 1.1;
+  padding-left: 2vh;
+}

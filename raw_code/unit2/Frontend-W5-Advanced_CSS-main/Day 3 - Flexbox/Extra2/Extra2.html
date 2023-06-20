@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../normalize.css">
+
+    <style>
+        html {
+            line-height: 1.5;
+        }
+
+        .container {
+            display: flex;
+            width: 60%;
+            height: 40vh;
+            border: 3px solid black;
+            margin-top: 10vh;
+            margin-left: 10vh;
+            padding: 0;
+            border-radius: 45px;
+            overflow: hidden;
+
+
+        }
+
+        .first-column {
+            background-color: #88B46F;
+            width: 50%;
+            color: white;
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+            border-right: 3px solid black;
+        }
+
+        .first-text {
+            display: flex;
+            align-items: center;
+        }
+
+        .second-column {
+            background-color: #699AFC;
+            width: 15%;
+            color: white;
+            font-weight: bolder;
+            display: flex;
+
+        }
+
+        .second-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-left: 10%;
+        }
+
+        .other-half {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .col1,
+        .col2,
+        .col3 {
+            height: 33.3%;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .col1 {
+            background-color: #f2fa89;
+        }
+
+        .col2 {
+            background-color: #e6f141;
+        }
+
+        .col3 {
+            background-color: #eaee16;
+        }
+
+        .third-text {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="first-column">
+            <p class="first-text">First Column<br>Height 400px;<br>Green-ish background<br>Text Centered</p>
+
+        </div>
+        <div class="second-column">
+            <p class="second-text">Second Column<br>Text to the bottom<br>Blod, blueish<br>background</p>
+        </div>
+        <div class="other-half">
+            <div class="third-column col1">
+                <p class="third-text">Third Column Part 1</p>
+            </div>
+            <div class="third-column col2">
+                <p class="third-text">Third Column Part 2</p>
+            </div>
+            <div class="third-column col3">
+                <p class="third-text">Third Column Part 3</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

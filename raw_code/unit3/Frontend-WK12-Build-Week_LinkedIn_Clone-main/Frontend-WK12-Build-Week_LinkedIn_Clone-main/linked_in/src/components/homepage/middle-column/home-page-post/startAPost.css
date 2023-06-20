@@ -1,0 +1,95 @@
+.post-profile-img {
+  height: 48px;
+  width: 48px;
+  background-color: green;
+}
+
+.post-module-button {
+  border-radius: 20px;
+  font-weight: 500;
+  transform: translateX(0.5rem);
+  border-radius: 50px;
+}
+
+.post-module-button:hover {
+  color: gray !important;
+  background-color: rgb(238, 237, 237) !important;
+  border-color: gray !important;
+}
+
+.post-icons {
+  height: 48px;
+  cursor: pointer;
+}
+
+.photo-icon {
+  color: rgb(72, 162, 192);
+}
+
+.video-icon {
+  color: green;
+}
+.event-icon {
+  color: rgb(223, 146, 5);
+}
+
+.article-icon {
+  color: rgb(216, 68, 0);
+}
+
+.start-post-card {
+  background-color: white;
+  border-radius: 10px;
+}
+
+#modal-who-can-see {
+  border: solid 1px gray;
+  border-radius: 20px;
+  font-weight: 100px;
+  border-radius: 50px;
+  height: 25px;
+  font-size: 12px;
+}
+#modal-who-can-see:hover {
+  cursor: pointer;
+  border: solid 2px gray;
+  background-color: rgb(235, 233, 233);
+}
+
+#modal-textarea {
+  width: 100%;
+  border: none;
+  min-height: 96px;
+  resize: none;
+}
+
+#modal-textarea:focus-visible {
+  outline: none;
+}
+
+#modal-smile-face {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+#modal-smile-face:hover {
+  box-shadow: 0px 0px 0px 8px rgba(85, 85, 85, 0.35);
+}
+
+#modal-add-hashtag {
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#modal-add-hashtag:hover {
+  background-color: rgb(208, 234, 243);
+}
+
+.modal-icons {
+  width: 24px;
+  height: 24px;
+}
+
+.modal-icons:hover {
+  background-color: rgba(85, 85, 85, 0.35);
+}

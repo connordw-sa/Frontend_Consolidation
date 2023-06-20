@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WELCOME TO YOUR EXAM</title>
+    <link rel="stylesheet" href="results.css" />
+    <link rel="stylesheet" href="commonStyles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="header">
+        <img src="./assests/epicode_logo.png" id="logo-img" />
+      </div>
+      <div class="result-div">
+        <h1>Results</h1>
+        <p id="summary">The summary of your answers:</p>
+      </div>
+      <div id="flexcontent">
+        <div>
+          <h1 class="fontWeight white-Color">Correct</h1>
+          <h1 class="percentage white-Color" id="correct-per"></h1>
+          <span class="white-Color" id="correct-answers"></span>
+        </div>
+        <div class="set-size charts-container">
+          <div class="pie-wrapper progress-75 style-2">
+            <p class="label">
+              <span class="lineHight">
+                <span>Congratulations!</span><br />
+                <span class="pass-content">You passed the exam.</span>
+              </span>
+              <br />
+              <span class="text-content">We'll send you the certificate</span
+              ><br />
+              <span class="text-content">in few minutes.</span><br />
+              <span class="text-content">Check your email (including</span
+              ><br />
+              <span class="text-content">promotions / spam folder)</span><br />
+            </p>
+            <div class="pie">
+              <div class="left-side half-circle"></div>
+              <div class="right-side half-circle"></div>
+            </div>
+            <div class="shadow"></div>
+          </div>
+        </div>
+        <div class="wrong">
+          <h1 class="fontWeight light-color">Wrong</h1>
+          <h1 class="percentage light-color" id="wrong-per"></h1>
+          <span class="light-color" id="wrong-answers"></span>
+        </div>
+      </div>
+    </div>
+    <footer id="bottom">
+      <button id="btn">RATE US</button>
+    </footer>
+    <script src="./result.js"></script>
+  </body>
+</html>

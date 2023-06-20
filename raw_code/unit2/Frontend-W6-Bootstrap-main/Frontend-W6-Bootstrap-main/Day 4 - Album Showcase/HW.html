@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1000.0" data-gr-ext-installed="">
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MusicalBox</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#fav-albums">Favourite Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#best-album-ever">Best album ever</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- EXERCISE 1
+        Create a Jumbotron section with a quick explanation / image of the website.
+        Make it appear with a fade-in animation effect when the page loads.
+    -->
+    <section id="jumbo-intro" class="position-relative">
+        <img class="bg-intro" src="assets/pexels-sebastian-ervi-1763075.jpg">
+        <div class="container">
+            <div class="jumbotron bg-transparent">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead">In this webpage you'll see some of my favourite music.</p>
+                <hr class="my-4">
+                <p>You should totally check it out!</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- EXERCISE 2
+        Use the Bootstrap Card to contain every album in the favorite list.
+        Use the elements of a card to display nicely the album informations such as album title, artist, year, etc..
+    -->
+
+    <!-- EXERCISE 3
+        Foreach album in the favorite list, place a badge on top of it with the genre of the album
+    -->
+    <section id="fav-albums">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-6 col-md-4 col-lg-3 h-100">
+                    <div class="album-container">
+                        <div class="card bg-custom h-100">
+                            <img src="assets/black-holes-and-revelations.jpg" class="img-fluid">
+                            <div class="card-body">
+                                <h4 class="album-title">Black Holes and Revelations</h4>
+                                <span class="album-artist">Muse</span>
+                                <span class="badge bg-purple p-2">Rock</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="album-container">
+                        <div class="card bg-custom">
+                            <img src="assets/end-of-aquarius.jpg" class="img-fluid">
+                            <div class="card-body">
+                                <h4 class="album-title">End of Aquarius</h4>
+                                <span class="album-artist">Droid Bishop</span>
+                                <span class="badge bg-purple p-2">Synthwave</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="album-container">
+                        <div class="card bg-custom">
+                            <img src="assets/II.jpeg" class="img-fluid">
+                            <div class="card-body">
+                                <h4 class="album-title">Crystal Castles II</h4>
+                                <span class="album-artist">Crystal Castles</span>
+                                <span class="badge bg-purple p-2">Power Electronics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="album-container">
+                        <div class="card bg-custom">
+                            <img src="assets//it-takes-a-thief.jpeg" class="img-fluid">
+                            <div class="card-body">
+                                <h4 class="album-title">It Takes A Thief</h4>
+                                <span class="album-artist">Thievery Corporation</span>
+                                <span class="badge bg-purple p-2">Acid Jazz</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="album-container">
+                        <div class="card bg-custom">
+                            <img src="assets/black-holes-and-revelations.jpg" class="img-fluid">
+                            <div class="card-body">
+                                <h4 class="album-title">Black Holes and Revelations</h4>
+                                <span class="album-artist">Muse</span>
+                                <span class="badge bg-purple p-2">Rock</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="album-container">
+                        <div class="card bg-custom">
+                            <img src="assets/end-of-aquarius.jpg" class="img-fluid">
+                            <div class="card-body">
+                                <h4 class="album-title">End of Aquarius</h4>
+                                <span class="album-artist">Droid Bishop</span>
+                                <span class="badge bg-purple p-2">Synthwave</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="album-container">
+                        <div class="card bg-custom">
+                            <img src="assets/II.jpeg" class="img-fluid">
+                            <div class="card-body">
+                                <h4 class="album-title">Crystal Castles II</h4>
+                                <span class="album-artist">Crystal Castles</span>
+                                <span class="badge bg-purple p-2">Power Electronics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="album-container">
+                        <div class="card bg-custom">
+                            <img src="assets//it-takes-a-thief.jpeg" class="img-fluid">
+                            <div class="card-body">
+                                <h4 class="album-title">It Takes A Thief</h4>
+                                <span class="album-artist">Thievery Corporation</span>
+                                <span class="badge bg-purple p-2">Acid Jazz</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXERCISE 4
+        Create a section with an album tracklist inside a Bootstrap table.
+        The row colors of the table must be alternated.
+
+        There should be a column for the track order number, one for the title and one for the track duration.
+        (If you want, you can also add extra columns)
+    -->
+
+    <section id="best-album-ever">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-md-4 d-flex flex-column justify-content-center">
+                    <img src="assets/la-revancha-del-tango.jpg" class="img-fluid" data-bs-toggle="collapse"
+                        data-bs-target="#best-album-description">
+                </div>
+                <div id="best-album-description" class="col-12 col-md-8 collapse show">
+                    <div class="d-flex flex-column justify-content-center h-100">
+                        <h4>Gotan Project - La Revancha Del Tango</h4>
+                        <div>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </div>
+                        <div class="my-4">
+                            <table class="table text-white">
+                                <!-- <table class="table table-dark table-striped"> -->
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Title</th>
+                                        <th>Duration</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tracklist">
+                                    <tr>
+                                        <th>1</th>
+                                        <td>Queremos Paz</td>
+                                        <td>5:15</td>
+                                        <!-- EXERCISE 5
+        Add a DELETE bootstrap button at the end of each row of the tracklist. 
+        Attach the functionality to remove its row when it gets clicked.  
+
+        ##EXTRA##
+        Make only one button visible at a time, for each row, when the single row gets hovered. 
+        Animate it with a fade-in effect upon the user hovering and fade-out when he/she goes away from it.
+    -->
+                                        <td class="text-right"><button class="btn btn-outline-danger"
+                                                onclick="removeClosest(event)">Delete</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td>Epoca</td>
+                                        <td>4:28</td>
+                                        <td class="text-right"><button class="btn btn-outline-danger"
+                                                onclick="removeClosest(event)">Delete</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        <td>Chunga's Revenge</td>
+                                        <td>5:02</td>
+                                        <td class="text-right"><button class="btn btn-outline-danger"
+                                                onclick="removeClosest(event)">Delete</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div>
+                                <!-- EXERCISE 6
+        Add an "Add Track" button under the tracklist of the album. 
+        It should have a nice shadow transition when it gets hovered (with the box-shadow property) to look like 
+        the button was elevating itself every time the user hovers onto it.        
+    -->
+                                <button class="btn bg-purple btn-shadow" data-toggle="modal"
+                                    data-target="#add-track-modal">
+                                    Add track </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 mx-auto d-none">
+                    <h4>Contact Me</h4>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn btn-outline-light mx-auto">Send me a message</button>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <h3>Go to:</h3>
+                </div>
+                <div class="col-12 text-center">
+                    <ul class="pl-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#fav-albums">Favourite Albums</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#best-album-ever">Best album ever</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- EXERCISE 7
+        On the click of "Add Track" button, a modal should appear.
+        (check in the documentation the modal+button example)
+        
+        The modal shall contain input fields with (avoid using a <form>):
+        - Track number
+        - Track title
+        - Track duration
+        - Track featuring
+        - Live Track (checkbox)
+
+        The fields should be inside an Input Group and divided in 2 columns.
+    -->
+
+    <!-- MODAL -->
+    <div class="modal fade" id="add-track-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog " style="max-width: 700px">
+            <div class="modal-content bg-purple">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="exampleModalLabel">Add track</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                        <span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <input required id="trackN" type="text" class="form-control" placeholder="#">
+                                    <input id="trackName" type="text" class="form-control w-50" placeholder="Name">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input id="duration" type="text" class="form-control" placeholder="Duration">
+                                    <input id="feats" type="text" class="form-control w-50" placeholder="Feats.">
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check">
+                                    <input id="live" class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Live performance?
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- EXERCISE 8
+        The modal should contain 2 buttons at the bottom:
+        - Add => Adds a new track in the tracklist with the data of the input fields.
+        - Close => closes the modal
+
+        https://getbootstrap.com/docs/4.6/components/alerts/
+        [EXTRA] Make the message disappear after 5 seconds
+        https://www.w3schools.com/jsref/met_win_settimeout.asp
+    -->
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-link" onclick="clearFields()"
+                        data-dismiss="modal">Close</button>
+                    <button type="button" class="btn bg-fuxia" onclick="addNewTrack()" data-dismiss="modal">Add
+                        track</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXERCISE 8
+        Alert the user with a success message when the track gets added, or when a track gets deleted.
+     -->
+    <!-- ALERT -->
+    <div class="alert alert-success alert-message d-none" role="alert">
+        A simple success alert—check it out!
+    </div>
+
+    <script>
+        const bsAlert = document.querySelector(".alert.alert-success") // this needs to be global to be accessible from various points in this code
+
+        function removeAlert() {
+            bsAlert.classList.remove("d-none")
+
+            setTimeout(function () {
+                bsAlert.classList.add("fade-out--long", "fade-out")
+            }, 2000)
+            setTimeout(function () {
+                bsAlert.classList.add("d-none")
+            }, 4000)
+            setTimeout(function () {
+                bsAlert.classList.remove("fade-out--long", "fade-out")
+            }, 4100)
+        }
+
+        function removeClosest(e) {
+            const removedAlbumTitle = e.target.closest("tr").querySelector("td:first-of-type").innerText
+            //displays alert
+            bsAlert.innerHTML = "You successfully removed " + "<strong>" + removedAlbumTitle + "</strong>"
+
+            const tr = e.target.closest("tr")
+
+            // <!-- EXERCISE 12
+            //   Considering the button you've created in ex. 5 that deletes the row:
+            //   Add a fade-out effect to the row before it gets removed, using a CSS transition effect
+            // -->
+            tr.classList.add("fade-out") //fades away the tr before removing it from the dom
+
+            removeAlert()
+            setTimeout(function () {
+                e.target.closest("tr").remove() // removes the actual row of the table after the fade-out animation finishes
+            }, 1000)
+
+        }
+
+        function addNewTrack() {
+            const trackNum = document.querySelector("#trackN").value
+            const trackName = document.querySelector("#trackName").value
+            const duration = document.querySelector("#duration").value
+            const feats = document.querySelector("#feats").value
+            const live = document.querySelector("#live").checked
+
+            // 	<!-- EXERCISE 9
+            //      All the field (except for Feat. and Live Track) are required fields and require validation.
+            //      If the user clicks on the Add button and some fields are empty, a warning alert must be shown
+            //  -->
+
+            //these are the only required fields to check
+            if (!trackNum || !trackName || !duration) {
+                //if they don't exist the execution stops here and displays an alert
+                alert("Please fill in all the fields.")
+            } else {
+
+
+                const newTr = document.createElement("tr")
+
+                // <!-- EXERCISE 11
+                // Considering the "Add Track" functionality that you've created on ex. 8: 
+                //  - The new list-element added to the list should appear with a fade-in effect
+                // -->
+                newTr.classList.add("fade-in")
+
+                let modalData = [trackNum, trackName, duration]
+
+                //Creates as many td as necessary, and fills them in with the modal fields data 
+                for (let i = 0; i < modalData.length; i++) {
+                    const currentField = modalData[i]
+                    const td = document.createElement("td")
+                    td.innerText = currentField
+
+                    newTr.appendChild(td)
+                }
+
+                // CREATES DELETE BUTTON AND APPENDS IT
+                const button = document.createElement("button")
+                button.classList.add("btn")
+                button.classList.add("btn-outline-danger")
+
+                // Attaches removeClosest to the delete button which is a function we created above
+                button.addEventListener("click", removeClosest)
+
+                button.innerText = "Delete"
+
+                const td = document.createElement("td")
+                td.classList.add("text-right")
+
+                td.appendChild(button)
+                newTr.appendChild(td)
+                document.querySelector(".tracklist").appendChild(newTr)
+
+                //SHOWS ALERT
+                bsAlert.innerText = "New table row added"
+                bsAlert.classList.remove("d-none")
+
+                // hides the alert after 4 seconds (function definition at the top)
+                removeAlert()
+
+                //clears the previously added fade-in class not to conflict with the future fade-out upon delete
+                setTimeout(function () { newTr.classList.remove("fade-in") },
+                    1500)
+            }
+        }
+
+        // 	<!-- EXERCISE 10
+        // 		Make sure the "Close" button clears out the input fields AND closes the modal
+        //  -->
+        function clearFields() {
+            document.querySelector("#trackN").value = ""
+            document.querySelector("#trackName").value = ""
+            document.querySelector("#duration").value = ""
+            document.querySelector("#feats").value = ""
+            document.querySelector("#live").checked = false
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+<script>
+
+</script>
+</body>
+
+</html>

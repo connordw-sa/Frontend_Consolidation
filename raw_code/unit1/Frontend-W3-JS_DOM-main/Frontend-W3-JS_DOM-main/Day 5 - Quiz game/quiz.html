@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<!--
+        QUIZ GAME!
+
+        RULES:
+        / The player must guess correctly a certain amount of questions
+        / Each correct answer gives him one point
+        / Answers could be multiple or true/false
+        / At the end of the game, the user must know his/her total score
+
+        QUESTIONS:
+        / You can get them from this URL ( http://bit.ly/strive_QUIZZ ) or you can write your own
+        / Could be multiple of boolean (true / false)
+
+        HINTS:
+        / Keep a global variable score for the user score
+        / Keep a variable questionNumber for the question the user is answering
+        / When questionNumber is bigger then the available questions, present the score
+        / Start working with the questions saved in a variable (or you can use AJAX for fetching external questions if you already know how to do it!)
+        / Start with the easier version and THEN implement the EXTRAs
+        / Please debug everything / try it on the console to be sure of what to expect from your code
+
+        EXTRA:
+        / Show if the answer provided was the wrong one or correct it after clicking
+        / Present the questions one at a time instead of having all of them displayed together
+        / Let the user select difficulty and number of questions (you can get q/a from https://opentdb.com/api.php?amount=10&category=18&difficulty=easy modifying amount and difficulty)-->
+
+
+<body>
+
+    <div class="questioncard">
+        <div id="questionsbox" class="hide">
+            <div id="question">Question</div>
+            <div id="answerbtns" class="btn-grid">
+            </div>
+        </div>
+
+        <div class="controlbuttons">
+            <button id="startbtn" class="startbtn btn">Start</button>
+            <p class="text-hide">Choose your answer and select next to proceed</p>
+            <button id="nextbtn" class="nextbtn btn hide">Next</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+
+        const questions = [
+            {
+                question: "How many breeds of elephant are there?",
+                answers: [
+                    { text: "Three", correct: true },
+                    { text: "Fourteen", correct: false },
+                    { text: "Thirty", correct: false },
+                    { text: "Nine", correct: false }
+                ]
+            },
+            {
+                question: "What year did Vincent Van Gogh die in?",
+                answers: [
+                    { text: "1801", correct: false },
+                    { text: "1890", correct: true },
+                    { text: "1790", correct: false },
+                    { text: "1644", correct: false }
+                ]
+            },
+            {
+                question: "What's the capital city of Tanzania?",
+                answers: [
+                    { text: "Mwanza", correct: false },
+                    { text: "Moshi Urban", correct: false },
+                    { text: "Dar es Salaam", correct: false },
+                    { text: "Dodoma", correct: true }
+                ]
+            },
+            {
+                question: "What is Shakespeare's shortest play?",
+                answers: [
+                    { text: "The Tempest", correct: false },
+                    { text: "Julius Caesar", correct: false },
+                    { text: "The Taming of the Shrew", correct: false },
+                    { text: "The comedy of Errors", correct: true }
+                ]
+            },
+            {
+                question: "Who teaches the best online coding courses?",
+                answers: [
+                    { text: "Epicode", correct: true },
+                    { text: "Code Academy", correct: false },
+                    { text: "Youtube", correct: false },
+                    { text: "Futurelearn", correct: false }
+                ]
+            }
+        ];
+
+        const startButton = document.getElementById("startbtn");
+        const nextButton = document.getElementById("nextbtn");
+        const questionContainer = document.getElementById("questionsbox");
+        const questionDiv = document.getElementById("question");
+        const answerButtons = document.getElementById("answerbtns");
+        const startText = document.querySelector(".text-hide");
+
+
+        const startGame = () => {
+            startButton.addEventListener("click", () => {
+                startButton.classList.add("hide");
+                startText.classList.add("hide");
+                questionContainer.classList.remove("hide");
+                nextButton.classList.remove("hide");
+            })
+        }
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        const fillQuestion = () => {
+            const currentQuestion = questions[currentQuestionIndex];
+            questionDiv.innerText = currentQuestion.question;
+            answerButtons.innerHTML = "";
+
+            currentQuestion.answers.forEach(answer => {
+                const button = document.createElement("button");
+                button.innerText = answer.text;
+                button.classList.add("btn-answer");
+
+
+                button.addEventListener("click", (event) => {
+                    console.log(event.target)
+                    const clickedButton = event.target
+                    const correct = currentQuestion.answers.find((answer) => answer.text === clickedButton.innerText).correct;
+
+                    if (correct) {
+                        score++;
+                    }
+                    document.body.classList.add(correct ? "correct" : "incorrect")
+                    answerButtons.querySelectorAll("button").forEach((button) => {
+                        button.disabled = true;
+
+                    })
+                })
+                answerButtons.appendChild(button);
+            })
+
+        }
+
+
+        nextButton.addEventListener("click", () => {
+            document.body.classList.remove("correct", "incorrect")
+
+            if (currentQuestionIndex >= questions.length - 1) {
+                finishGame();
+            } else {
+
+
+                currentQuestionIndex++;
+
+
+                fillQuestion();
+            }
+        })
+
+
+        const finishGame = () => {
+            const scoreElement = document.createElement("div");
+            scoreElement.classList.add("score");
+            scoreElement.innerText = `Your score: ${score}/5`;
+            questionContainer.appendChild(scoreElement);
+            nextButton.classList.add("hide");
+            answerButtons.classList.add("hide");
+            questionDiv.classList.add("hide");
+
+        }
+
+
+
+
+
+
+        window.onload = () => {
+            startGame();
+            fillQuestion();
+
+        }
+    </script>
+</body>
+
+
+
+</html>

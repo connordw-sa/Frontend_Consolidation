@@ -1,0 +1,10 @@
+.CardResources {
+  height: auto;
+  border-radius: 15px/10px;
+  overflow: visible;
+  box-shadow: 0 0 0 1px rgba(0 0 0, 0.08);
+}
+
+.ResourcesContent {
+  padding-left: 2rem;
+}

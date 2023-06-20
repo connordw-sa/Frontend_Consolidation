@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+        }
+
+        .bingo-board-main {
+            display: flex;
+            width: 50%;
+            margin-top: 50px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .bingo-board-container {
+            padding-bottom: 50px;
+            display: flex;
+            width: 40%;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        .bingo-board-user {
+            display: flex;
+            margin-bottom: 100px;
+            flex-wrap: wrap;
+        }
+
+        .bingo-cell {
+            width: 45px;
+            align-items: center;
+            border: 1px solid red
+        }
+
+        .user-cell {
+            width: 25px;
+            align-items: center;
+            border: 1px solid blue
+        }
+
+        .bingo-number {
+            margin-bottom: 25px;
+        }
+
+        .highlight {
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bingo Board</h1>
+        <h2 class="bingo-number"></h2>
+        <button class="highlight-button">Random Number</button>
+
+        <div class="bingo-board-main"></div>
+        <div class="bingo-board-user"></div>
+        <input type="number" class="input-field" placeholder="Select number of boards" value="1" />
+        <button class="generate-user-boards">Generate User Boards</button>
+
+
+
+    </div>
+
+
+
+    <script>
+
+
+
+        const makeBoard = () => {
+            for (let i = 0; i < 76; i++) {
+                document.querySelector('.bingo-board-main').innerHTML += `<div class='bingo-cell'>${i + 1}</div>`
+            }
+        }
+
+        const makeUserBoards = () => {
+            const generateUserBoards = document.querySelector('.generate-user-boards');
+            const numOfBoards = document.querySelector('.input-field');
+            generateUserBoards.addEventListener('click', () => {
+
+                const numBoards = numOfBoards.value;
+
+
+                for (let i = 0; i < numBoards; i++) {
+                    const boardContainer = document.createElement('div');
+                    boardContainer.classList.add('bingo-board-container');
+                    for (let j = 0; j < 24; j++) {
+                        boardContainer.innerHTML += `<div class='user-cell'>${j + 1}</div>`
+                    }
+                    document.querySelector('.bingo-board-user').appendChild(boardContainer);
+                }
+            });
+        }
+
+
+
+        const selectedNumber = () => {
+            const generatedNumbers = []
+            const highlightButton = document.querySelector('.highlight-button');
+
+            highlightButton.addEventListener('click', () => {
+
+                let randomNum = Math.floor(Math.random() * 100) + 1
+                while (generatedNumbers.includes(randomNum)) {
+                    randomNum = Math.floor(Math.random() * 100) + 1
+                }
+
+                document.querySelector('.bingo-number').innerHTML = randomNum;
+
+
+
+                const mainBoardCells = document.querySelectorAll('.bingo-cell');
+                const userBoardCells = document.querySelectorAll('.user-cell');
+                mainBoardCells.forEach((cell) => {
+                    if (cell.textContent === randomNum.toString()) {
+                        cell.classList.add('highlight');
+                    }
+                });
+                userBoardCells.forEach((cell) => {
+                    if (cell.textContent === randomNum.toString()) {
+                        cell.classList.add('highlight');
+                    }
+                });
+
+                generatedNumbers.push(randomNum)
+
+                const highlightedCells = document.querySelectorAll('.highlight').length;
+                if (highlightedCells >= 24) {
+                    alert('Bingo!')
+                }
+            });
+        }
+
+
+        window.onload = () => {
+            makeBoard()
+            makeUserBoards()
+            selectedNumber()
+        }
+    </script>
+</body>
+
+</html>

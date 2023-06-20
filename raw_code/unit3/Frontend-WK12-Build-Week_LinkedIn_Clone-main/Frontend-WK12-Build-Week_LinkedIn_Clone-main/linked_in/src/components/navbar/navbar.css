@@ -1,0 +1,101 @@
+.navbar-linkedin-logo {
+  height: 34px;
+}
+
+.navbar-profile-picture {
+  height: 24px;
+  background-color: green;
+  width: 24px;
+}
+
+#root
+  > div
+  > div
+  > div.flex-grow-1
+  > nav
+  > div.mr-auto.p-0.navbar-nav
+  > div
+  > div
+  > div {
+  right: 0px;
+  left: auto;
+  width: 264px;
+  font-size: small;
+  border-radius: 15px 0px 15px 15px;
+  box-shadow: 0px 4px 9px 0px rgba(80, 79, 79, 0.75);
+}
+
+.navbar-profile-picture2 {
+  height: 48px;
+  background-color: green;
+  width: 48px;
+}
+
+.navbar-show-profile {
+  width: 90%;
+  height: 30px;
+
+  border-radius: 25px !important;
+}
+
+#root > div > div > nav > form > input {
+  width: 280px;
+  height: 34px;
+}
+
+.main-navbar-font {
+  font-size: smaller;
+}
+
+.user-image-search {
+  height: 20px;
+  width: 20px;
+}
+
+#search-form:focus {
+  transition-duration: 0.7s;
+  box-shadow: none;
+  transition-property: width;
+  width: 375px;
+  border: solid 2px;
+  border-color: black;
+}
+
+#search-suggestion {
+  top: 82%;
+  left: 60px;
+  width: 375px;
+  background-color: white;
+  position: absolute;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.search-result:hover {
+  background-color: rgb(245, 242, 242);
+  cursor: pointer;
+}
+
+.navbar-icons {
+  font-size: 24px;
+}
+
+#basic-nav-dropdown1 {
+  font-size: small;
+  padding: 0;
+  color: #6c757d;
+}
+
+#basic-nav-dropdown2 {
+  font-size: small;
+  padding: 0;
+  color: #6c757d;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

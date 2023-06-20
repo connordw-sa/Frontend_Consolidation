@@ -1,0 +1,134 @@
+.revPageButton {
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #00ffff;
+  border: none;
+  border-radius: 0%;
+  height: 7%;
+  width: 22%;
+  font-size: 1.25em;
+  font-weight: 700;
+  font-family: "Outfit", sans-serif;
+  box-shadow: 0 0 25px #00ffff;
+  border-color: #00ffff;
+  cursor: pointer;
+  text-align: center;
+  color: rgb(21, 1, 70);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/* ADD NEW STYLES */
+
+.container {
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.revPageH1 {
+  font-weight: bolder;
+  font-size: 3rem;
+  font-family: "outfit", sans-serif;
+  color: rgb(235, 232, 229);
+  margin-bottom: 0;
+}
+
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 60px;
+  color: #561e6e;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #00ffff;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #00ffff;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #00ffff;
+}
+
+.revPagePar {
+  font-size: 1.5rem;
+  font-family: "Outfit", sans-serif;
+  color: rgb(235, 232, 229);
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.marginTop {
+  margin-top: 35px !important;
+}
+#footer-bottom {
+  display: flex;
+  justify-content: center;
+}
+#morinfoBtn {
+  height: 55px;
+  padding-inline: 3rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  background-color: #00ffff;
+  box-sizing: border-box;
+  box-shadow: 0 0 5vh #00ffff;
+  font-family: "inter", sans-serif;
+  cursor: pointer;
+  border: none;
+  color: #0b113b;
+}
+
+.revPagePlaceholder {
+  background: none;
+  border: none;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  border-bottom-width: 2px;
+  border-bottom-color: #900080;
+  border-bottom-style: solid;
+  color: aliceblue;
+  width: 63%;
+  height: 10%;
+  margin-top: 5%;
+  margin-left: 21%;
+  margin-right: 18.5%;
+}
+
+.revPagePlaceholder:focus {
+  outline: none;
+}

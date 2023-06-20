@@ -1,0 +1,8 @@
+.post-card {
+  background-color: white;
+  border-radius: 15px;
+}
+
+.post-card-icons {
+  cursor: pointer;
+}

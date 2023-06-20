@@ -1,0 +1,23 @@
+.ExperienceMediaPic {
+  height: 10vh;
+}
+
+.PlusPencil {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.PlusPencil:hover {
+  background: lightgrey;
+}
+
+.PlusPencil:focus {
+  background: lightgrey;
+  border: none;
+  box-shadow: none;
+}
+
+.ExperienceMediaDetails {
+  line-height: 0.5rem;
+}

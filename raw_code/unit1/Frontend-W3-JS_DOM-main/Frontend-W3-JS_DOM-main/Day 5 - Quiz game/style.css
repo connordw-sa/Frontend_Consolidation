@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600&family=Prompt:ital,wght@1,200&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "prompt", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.correct {
+  background-color: green;
+}
+
+.incorrect {
+  background-color: red;
+}
+
+.questioncard {
+  width: 780px;
+  max-width: 75%;
+  background-color: antiquewhite;
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow: 0 0 12px 3px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 12px;
+  margin: 20px;
+}
+
+.startbtn,
+.nextbtn {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 9px, 16px;
+  width: 200px;
+}
+
+.controlbuttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.btn-answer:focus {
+  background-color: yellow;
+}
+
+.score {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 9px, 16px;
+  width: 200px;
+}

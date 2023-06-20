@@ -1,0 +1,102 @@
+body {
+  height: 100%;
+  width: auto;
+}
+
+.centrediv {
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
+}
+
+.header {
+  color: rgb(17, 82, 19);
+  background-color: rgb(255 253 233);
+  padding-top: 10px;
+  border-top: 2px solid #ffd993;
+}
+
+.head-second {
+  font-size: 2rem;
+  margin-top: 60px;
+}
+
+.sally {
+  color: grey;
+}
+
+.focacca {
+  border-radius: 10px;
+  filter: drop-shadow(5px 5px 4px #797878);
+}
+
+.leftdiv {
+  text-align: left;
+  list-style-position: inside;
+  padding-left: 35.5%;
+}
+
+ul li {
+  list-style-type: disc;
+  list-style-type: disc;
+}
+
+.featured {
+  color: rgb(255, 123, 0);
+  padding-left: 8px;
+}
+
+.featurelink {
+  padding-left: 8px;
+}
+
+.featurelink::before::after {
+  color: aquamarine;
+}
+
+.featuredtotal {
+  border-left: 2px solid #ffd993;
+  margin-bottom: 3%;
+}
+
+.bluey {
+  background-color: rgb(18, 184, 129);
+  height: 1px;
+  border: none;
+  margin-right: 55%;
+  margin-bottom: 3%;
+}
+
+ul li {
+  line-height: 2rem;
+}
+
+.methodhr {
+  background-color: rgb(18, 184, 129);
+  height: 1px;
+  border: none;
+  margin-right: 55%;
+}
+
+.method {
+  padding-left: 1%;
+}
+
+a {
+  color: rgb(18, 184, 129);
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}

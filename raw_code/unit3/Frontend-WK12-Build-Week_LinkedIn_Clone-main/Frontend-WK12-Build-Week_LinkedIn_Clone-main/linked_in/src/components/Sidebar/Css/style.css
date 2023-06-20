@@ -1,0 +1,246 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f3f2ef;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#main-page {
+  min-width: 480px;
+}
+.side-column {
+  max-width: 330px;
+  margin-inline: auto;
+}
+
+.card {
+  margin-bottom: 5px;
+}
+
+.p-Image {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pics {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.company-pics {
+  width: 75px;
+  height: 70px;
+}
+
+.pics {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.photo {
+  width: 70px;
+  margin-left: 10px;
+}
+
+#f-button {
+  width: 85px;
+  height: 35px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-inline: auto;
+  background-color: white;
+  color: blue;
+  border: 1px solid blue;
+}
+
+#f-button:hover {
+  background-color: rgb(149, 149, 174);
+  transition: 0.7s;
+}
+.m-button {
+  width: 118px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 19px;
+  background-color: white;
+  color: rgb(113, 111, 111);
+  border: 1.5px solid grey;
+}
+
+.c-connect {
+  width: 105px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 19px;
+  background-color: white;
+  color: rgb(113, 111, 111);
+  border: 1.5px solid grey;
+}
+
+.ad {
+  justify-content: flex-end;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.c-question {
+  margin-left: 98px;
+}
+
+.f-size {
+  font-size: 13px;
+}
+
+li {
+  font-size: 12px;
+  list-style: none;
+}
+
+nav > ul > li :hover {
+  color: blue !important;
+  text-decoration: underline !important;
+}
+#logo {
+  width: 85px;
+}
+
+.fw {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-main {
+  display: flex;
+  font-size: 11px;
+  font-weight: 700;
+  margin-block-end: 30px;
+  line-height: 20px;
+  color: gray;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.list-group-item {
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: none;
+  font-size: 12px;
+  line-height: 10px;
+  font-weight: 500;
+}
+.DropdownButton {
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: none;
+  font-size: 12px;
+  line-height: 10px;
+  font-weight: 500;
+}
+
+#select_language {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.select-language-form button {
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  color: gray;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid gray;
+  padding-inline: 10px !important;
+  font-size: 12px;
+  height: 32px;
+  font-weight: 900;
+  font-family: inherit;
+}
+
+.show > .btn-primary.dropdown-toggle {
+  color: #000 !important;
+  background-color: #ffffff !important;
+  border-color: #282828 !important;
+}
+
+.btn-primary:hover {
+  color: #000 !important;
+  background-color: #ffffff !important;
+  border-color: #282828 !important;
+}
+.fQue {
+  font-size: 15px;
+}
+
+.ri-Card {
+  width: 21rem !important;
+}
+
+.e-text {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.learn {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.l-text {
+  font-size: 13.5px;
+  font-weight: bold;
+}
+
+.title-text {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.u-title {
+  font-size: 13px;
+  color: #616160;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sh-more {
+  font-size: 16px;
+  font-weight: bold;
+  color: #616160;
+}
+
+.q-text {
+  font-size: 15px;
+  font-weight: bold;
+  margin-inline: auto;
+  color: #616160;
+}
+
+.v-text {
+  font-size: 10px;
+  margin-top: 0;
+}
+
+.corp {
+  font-size: 13px;
+  margin-bottom: 2rem;
+  color: rgb(113, 111, 111);
+}
