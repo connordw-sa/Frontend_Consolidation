@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../normalize.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            width: 80%;
+            height: 100vh;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            flex-grow: 1;
+
+        }
+
+        .numbers {
+            background-color: #A32E76;
+            flex-grow: 1;
+            border: 5px solid white;
+            border-radius: 10px;
+            width: 100%;
+            color: white;
+        }
+
+        .col1 {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="col1 column">
+
+        </div>
+        <div class="col2 column">
+
+        </div>
+        <div class="col3 column">
+
+        </div>
+        <div class="col4 column">
+
+        </div>
+        <div class="col5 column">
+
+        </div>
+        <div class="col6 column">
+
+        </div>
+        <div class="col7 column">
+
+        </div>
+        <div class="col8 column">
+
+        </div>
+        <div class="col9 column">
+
+        </div>
+        <div class="col10 column">
+
+        </div>
+        <div class="col11 column">
+
+        </div>
+        <div class="col12 column">
+
+        </div>
+
+        <script>
+
+            function numberGenerator() {
+                for (let i = 0; i < 12; i++) {
+                    const containers = document.querySelector(`.col${i + 1}`);
+                    for (let k = 0; k <= i; k++) {
+                        const numbers = document.createElement('div');
+                        numbers.classList.add('numbers');
+                        numbers.textContent = `${k + 1}`;
+                        containers.appendChild(numbers);
+                    }
+                }
+            }
+            numberGenerator();
+        </script>
+</body>
+
+</html>
