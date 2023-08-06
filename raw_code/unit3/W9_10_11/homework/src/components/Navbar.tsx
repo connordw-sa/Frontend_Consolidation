@@ -7,8 +7,8 @@ export default function Navbar() {
     <div className="w-100 d-flex justify-content-between">
       <Button onClick={() => navigate("/")}>Day 1</Button>
       <Button onClick={() => navigate("/day2")}>Day 2</Button>
-      <Button onClick={() => navigate("/")}>Day 3</Button>
-      <Button onClick={() => navigate("/")}>Day 4</Button>
+      <Button onClick={() => navigate("/day3")}>Day 3</Button>
+      <Button onClick={() => navigate("/day4")}>Day 4</Button>
     </div>
   );
 }
