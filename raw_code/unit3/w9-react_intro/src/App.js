@@ -1,11 +1,7 @@
 import './App.css';
-import ButtonComponent from './homework/day1';
-import ImageComponent from './homework/day1q2';
-import MyNav from './homework/day2nav';
-import MyFooter from './day2footer';
-import Welcome from './homework/day2jumbotron';
-import LatestRelease from './homework/day2latestrelease';
-import { WarningSign, MyBadge, BookList } from './homework/day3components';
+import { ButtonComponent, ImageComponent } from './homework/day1';
+import { Welcome, MyNav, MyFooter, LatestRelease } from './homework/day2';
+import { WarningSign, MyBadge, BookList } from './homework/day3';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
