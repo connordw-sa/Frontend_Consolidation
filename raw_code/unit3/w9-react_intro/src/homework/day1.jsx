@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export const ButtonComponent = (props) => {
   return <button className="w-25 h-25">{props.label}</button>;
