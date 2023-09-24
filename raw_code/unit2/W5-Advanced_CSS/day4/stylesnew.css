@@ -1,0 +1,141 @@
+/*
+Navbar
+*/
+.navbar {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.navbar_left,
+.navbar_right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  margin: 10px;
+}
+
+.logo,
+.chevron_down {
+  width: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.chevron_down {
+  width: 10px;
+  padding-top: 5px;
+}
+
+.navbar_left {
+  justify-content: flex-start;
+}
+
+.navbar_right {
+  justify-content: flex-end;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.bell {
+  border-radius: 50%;
+  background-color: lightgray;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+/*
+Jumbotron
+*/
+
+.jumbotron {
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(94, 12, 201);
+  display: flex;
+  justify-content: center;
+}
+
+.jumbo_title {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.jumbo_p {
+  color: rgb(202, 202, 202);
+  font-size: 1.2rem;
+}
+
+.jumbo_text {
+  width: 30%;
+  margin-top: 5vh;
+}
+
+.jumbo_button1 {
+  width: 150px;
+  padding: 10px;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 2px;
+  color: white;
+}
+
+.jumbo_button2 {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+}
+
+/*
+nav below jumbotron
+*/
+
+.nav_below {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+
+.nav_container {
+  width: 25%;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+}
+
+.nav_logo {
+  width: 50px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+.bold_nav_text {
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.nav_text {
+  margin-top: 3px;
+  padding-top: 0;
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.cards_cont {
+  width: 100%;
+}
+
+.cards_titletop {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
