@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container > * {
+        display: block;
+        text-align: center;
+        margin: auto;
+      }
+
+      .container > img:nth-child(1) {
+        margin-bottom: 20px;
+        width: 200px;
+      }
+
+      .container > div:first-child {
+        border-top: 1px solid orange;
+      }
+
+      .banner_top {
+        padding: 20px;
+        background-color: lightyellow;
+        font-size: 0.9rem;
+        color: green;
+        margin-bottom: 60px;
+      }
+
+      .banner_top > span {
+        font-weight: bold;
+      }
+
+      .subtext {
+        margin-bottom: 20px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./w1_assets/day2logo.png" alt="logo" />
+      <div class="banner_top">
+        Part of <span class="banner_title">A SIMPLY FABULOUS THANKSGIVING</span>
+      </div>
+      <h1>Focaccia with Caramelized Onions, <br />Cranberries, and Brie</h1>
+      <p class="subtext">
+        Wow your taste buds with this festive focaccia appetizer topped with
+        sweet caramelized onions, tart <br />
+        cranberries, and creamy brie. It will become your new favorite holiday
+        starter!
+      </p>
+      <img class="focaccia" src="./w1_assets/day2focacca.png" />
+    </div>
+  </body>
+</html>
