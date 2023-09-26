@@ -4,10 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      html {
+        background-color: black;
+      }
+      body {
+        width: 75%;
+        margin: auto;
+        padding: 0;
+        background-color: lightgrey;
+        color: white;
+        text-align: center;
+      }
+      h4 {
+        color: black;
+      }
+      a {
+        all: unset;
+        cursor: pointer;
+      }
+      .banner_top {
+        background-color: rgb(17, 44, 66);
+        text-align: left;
+      }
+      .banner_top img {
+        width: 100px;
+        padding: 10px;
+      }
+      .nav {
+        display: flex;
+        background-color: rgb(24, 59, 88);
+      }
+      .nav p {
+        margin: 5px 20px;
+      }
+
+      .content {
+        margin: 30px;
+      }
+      .content p:first-child {
+        background-color: orange;
+        padding: 5px;
+      }
+      .banner_1 {
+        background-image: url("bg-image.png");
+        padding: 45px;
+      }
+      .perfect_gift {
+        text-align: left;
+        background-color: white;
+      }
+      .perfect_gift h4 {
+        padding: 10px;
+        margin-bottom: 0;
+      }
+      .perfect_gift span,
+      .gifting span {
+        color: aqua;
+        margin-left: 20px;
+      }
+      .perfect_gift img {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        filter: drop-shadow(5px 5px 5px #b4b4b4);
+      }
+      .imgs_1 {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 0 10px 20px;
+      }
+      .gifting img {
+        width: 100%;
+        margin-top: 20px;
+        object-fit: cover;
+      }
+      .gifting h4 {
+        margin: 0;
+      }
+
+      .banner_bot {
+        background-color: rgb(17, 44, 66);
+        text-align: center;
+        margin: auto;
+      }
+      .banner_bot img {
+        width: 200px;
+        padding: 40px;
+        text-align: center;
+      }
+      .banner_bot p {
+        background-color: rgb(24, 59, 88);
+        padding: 10px;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <img src="logo.png" />
+    <a name="top"></a>
+    <div class="banner_top">
+      <a href="https://www.amazon.com/"><img src="logo.png" alt="logo" /></a>
       <div class="nav">
         <p>All</p>
         <p>Today's deals</p>
@@ -16,7 +112,38 @@
         <p>Gift Cards</p>
         <p>Sell</p>
       </div>
+    </div>
+    <div class="content">
       <p>Shop All Holiday Gift Cards</p>
+      <div class="banner_1">
+        <h1>Holiday Gift Guides</h1>
+        <p>Be a go-gifter</p>
+      </div>
+      <div class="perfect_gift">
+        <h4>
+          Find the perfect gift
+          <a href="https://www.amazon.com/"><span>Shop now</span></a>
+        </h4>
+        <div class="imgs_1">
+          <img src="img_1.jpg" alt="img1" />
+          <img src="img_2.jpg" alt="img2" />
+          <img src="img_3.jpg" alt="img3" />
+          <img src="img_4.jpg" alt="img4" />
+        </div>
+      </div>
+      <div class="gifting">
+        <img src="img_9.png" alt="pic9" />
+        <h4>Play the gifting game <span>Shop gaming</span></h4>
+      </div>
+      <div class="gifting">
+        <img src="img_10.png" alt="pic9" />
+        <h4>The sound of cheer<span>Shop Audio & Accessories</span></h4>
+      </div>
+    </div>
+
+    <div class="banner_bot">
+      <a href="#top"><p>Back to top</p></a>
+      <img src="logo.png" alt="logo" />
     </div>
   </body>
 </html>
