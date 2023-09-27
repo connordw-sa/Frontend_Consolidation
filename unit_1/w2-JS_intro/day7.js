@@ -20,60 +20,44 @@
  A variable is a container, it stores data that can be changed later on. 
  -----------------------------------------------------------------------
 */
-
-function randomInteger(value) {
-  let randomNumber = Math.floor(Math.random() * value);
-  return randomNumber;
-}
-
+let randomNumber = Math.floor(Math.random() * 14 + 1);
+console.log(randomNumber);
 /* EXERCISE 3
  Write the code to execute an addition (a sum) of the numbers 12 and 20.
 */
-console.log(
-  "\nExercise 3-----------------------------------------------------\n" +
-    (12 + 20)
-);
+console.log("\nEx 3:", 12 + 20);
 
 /* EXERCISE 4
  Create a variable named x and assign to it the number 12.
 */
 
-let x = 12;
-console.log(
-  "\nExercise 4-----------------------------------------------------\n" + x
-);
+console.log("\nEx 4:", (x = 12));
 
 /* EXERCISE 5
  Create a variable called name and assign to it the string "John Doe".
 */
 
-let name = "John Doe";
-console.log(
-  "\nExercise 5-----------------------------------------------------\n" + name
-);
+console.log("\nEx 5:", (name = "John Doe"));
 
 /* EXERCISE 6
  Execute a subtraction between the number 12 and the variable x you declared before (which is storing the value 12).
 */
-console.log(
-  "\nExercise 6-----------------------------------------------------\n" +
-    (x - 12)
-);
+console.log("\nEx 6:", x - 12);
 
 /* EXERCISE 7
  Create two variables: name1 and name2. Assign to name1 the string "john", and to name2 the string "John" (this one has a capital J!)
  Verify that name1 is different from name2 (HINT: check their equality to be false).
  Finally, verify that the equality between name1 and name2 becomes true if both are lowercase (without changing the value of name2).
 */
+
 console.log(
-  "\nExercise 7-----------------------------------------------------"
-);
-console.log(
-  "john" === "John"
-    ? "They are equal"
-    : "They are not equal" + "john" === "John".toLowerCase()
-    ? "They're equal"
-    : "Not equal"
+  "\nEx 7:",
+  (name1 = "john"),
+  (name2 = "John"),
+  name1 === name2 ? "They are equal, " : "They are not equal, ",
+  name1,
+  (name2 = name2.toLowerCase()),
+  name1 === name2 ? "They're equal" : "Not equal"
 );
 
 /* EXERCISE 8
@@ -81,48 +65,35 @@ console.log(
  Write the code to print the literal value of x (ex.: if x is 1, it should print "one", if x is 5 it should print "five" etc.).
 */
 console.log(
-  "\nExercise 8-----------------------------------------------------"
+  "\nEx 8:",
+  (x2 = randomNumber),
+  (function () {
+    const numbers = [
+      "One",
+      "Two",
+      "Three",
+      "Four",
+      "Five",
+      "Six",
+      "Seven",
+      "Eight",
+      "Nine",
+    ];
+    return x2 <= 9 ? numbers[x2 - 1] : x2 == 10 ? "= ten" : " > 10";
+  })()
 );
-switch (randomInteger(11)) {
-  case 1:
-    console.log("one");
-    break;
-  case 2:
-    console.log("two");
-    break;
-  case 3:
-    console.log("three");
-    break;
-  case 4:
-    console.log("four");
-    break;
-  case 5:
-    console.log("five");
-    break;
-  case 6:
-    "six";
-    break;
-  case 7:
-    console.log("seven");
-    break;
-  case 8:
-    console.log("eight");
-    break;
-  case 9:
-    console.log("nine");
-    break;
-  default:
-    console.log("Number is greater than or equal to 10");
-}
 
 /* EXERCISE 9
  [Extra] Assign a value to a variable using a ternary operator (this topic has not been covered during lesson yet,
  try to search it by yourself, tomorrow morning we'll discuss it together!)
 */
+
 console.log(
-  "\nExercise 9-----------------------------------------------------"
+  "\nEx 9:",
+  randomNumber,
+  (message = "value1"),
+  10 <= randomNumber ? (message = "value2") : (message = "value3")
 );
-console.log(randomInteger(15) > 10 ? "Its bigger than 10" : "Its less than 10");
 
 // Additional assignments for Day 3
 
@@ -131,35 +102,29 @@ console.log(randomInteger(15) > 10 ? "Its bigger than 10" : "Its less than 10");
  The choice should be made based on the value of another variable called isMale.
 */
 console.log(
-  "\nExercise 1 Extra-----------------------------------------------------"
+  "\nEx 1 Extra:",
+  (gender = Math.random() < 0.5 ? "Male" : "Female")
 );
-console.log(+Math.random() < 0.5 ? "They are male" : "They are female");
 
 /*EX 2
  Write a piece of code for checking if, given two integers, the value of one of them is 8 or if their addition or subtraction is equal to 8.
 */
 console.log(
-  "\nExercise 2 Extra-----------------------------------------------------"
+  "\nEx 2 Extra:",
+  randomNumber,
+  (rand2 = randomNumber / 2),
+  randomNumber == 8 ||
+    rand2 == 8 ||
+    randomNumber + rand2 == 8 ||
+    Math.abs(randomNumber - rand2) == 8
+    ? "= 8"
+    : "!= 8"
 );
-let numero1 = randomInteger(20);
-let numero2 = randomInteger(20);
-
-if (
-  numero1 == 8 ||
-  numero2 == 8 ||
-  numero1 + numero2 == 8 ||
-  Math.abs(numero1 - numero2) == 8
-) {
-  console.log("One of them is 8 or they add/subtract to 8");
-}
 
 /*EX 3
  Create a variable and assign to it the concatenation of two strings.
 */
-console.log(
-  "\nExercise 3 Extra-----------------------------------------------------\n" +
-    "Hi".concat(" There")
-);
+console.log("\nEx 3 Extra:", "Hi".concat(" There"));
 
 /*EX 4
  Create three variables and assign a numerical value to each one of them. 
@@ -167,33 +132,29 @@ console.log(
  Display the result in the console.
 */
 
-let varArray = [randomInteger(10), randomInteger(10), randomInteger(10)].sort(
-  function (a, b) {
-    return b - a;
-  }
-);
 console.log(
-  "\nExercise 4 Extra-----------------------------------------------------\n" +
-    varArray
+  "\nEx 4 Extra:",
+  [randomNumber, randomNumber / 2, randomNumber * 2].sort(function (a, b) {
+    return b - a;
+  })
 );
 
 /*EX 5
  Write a piece of code for finding the average of two given integers.
 */
+console.log("\nEx 5 Extra:", (randomNumber + randomNumber * 2) / 2);
 
-/* WRITE YOUR ANSWER HERE */
+// /*EX 6
+//  Write a piece of code for finding the longest of two given strings.
+// */
 
-/*EX 6
- Write a piece of code for finding the longest of two given strings.
-*/
-
-/* WRITE YOUR ANSWER HERE */
-
-/*EX 7
- Write a piece of code for checking if a given value is a integer or not.
-*/
-
-/* WRITE YOUR ANSWER HERE */
+console.log(
+  "\nEx 6 Extra:",
+  "This string is longer".length > "This string shorter".length
+);
+// /*EX 7
+//  Write a piece of code for checking if a given value is a integer or not.
+// */
 
 /*EX 8
  Write a piece of code for calculating a certain percentage of a given number.
