@@ -20,8 +20,8 @@
  A variable is a container, it stores data that can be changed later on. 
  -----------------------------------------------------------------------
 */
-let randomNumber = Math.floor(Math.random() * 14 + 1);
-console.log(randomNumber);
+
+console.log((randomNumber = Math.floor(Math.random() * 14 + 1)));
 /* EXERCISE 3
  Write the code to execute an addition (a sum) of the numbers 12 and 20.
 */
@@ -91,8 +91,10 @@ console.log(
 console.log(
   "\nEx 9:",
   randomNumber,
-  (message = "value1"),
-  10 <= randomNumber ? (message = "value2") : (message = "value3")
+  (message = "old value = value1, "),
+  10 <= randomNumber
+    ? (message = "new value = value2")
+    : (message = "new value = value3")
 );
 
 // Additional assignments for Day 3
