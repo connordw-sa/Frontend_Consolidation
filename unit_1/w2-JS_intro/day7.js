@@ -157,16 +157,16 @@ console.log(
 // /*EX 7
 //  Write a piece of code for checking if a given value is a integer or not.
 // */
-
+console.log("\n Ex 7 Extra:", Number.isInteger(randomNumber));
 /*EX 8
  Write a piece of code for calculating a certain percentage of a given number.
  (Ex.: the 20% of 400 is 80)
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log("\n Ex 8 Extra:", ((randomNumber * 2) / 100) * randomNumber);
 
 /*EX 9
  Write a piece of code for checking if a given number is even or odd.
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log("\n Ex 9 Extra:", randomNumber % 2 == 0);
