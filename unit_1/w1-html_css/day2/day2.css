@@ -1,7 +1,9 @@
 body {
   margin: 0;
   width: 100%;
-  padding: 5px 0;
+}
+body * {
+  padding: 10px 0;
 }
 
 .banner {
@@ -21,6 +23,11 @@ body {
 .banner span {
   font-weight: bold;
 }
+.banner h1 {
+  width: 500px;
+  margin: auto;
+}
+
 .content {
   width: 650px;
   margin: auto;
