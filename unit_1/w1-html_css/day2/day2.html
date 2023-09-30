@@ -6,11 +6,59 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link
-			rel="stylesheet"
-			href="day2.css" />
 	</head>
-
+	<style>
+		body {
+			margin: 0;
+			width: 100%;
+		}
+		.banner {
+			text-align: center;
+			margin-bottom: 30px;
+			border: 1px solid red;
+			width: 100%;
+		}
+		.banner img {
+			width: 250px;
+			margin-top: 10px;
+		}
+		.banner p {
+			padding: 10px 0;
+			background-color: lightyellow;
+			border-top: 1px solid orange;
+			color: darkgreen;
+		}
+		.banner span {
+			font-weight: bold;
+		}
+		.banner h1 {
+			width: 500px;
+			margin: 30px auto 0 auto;
+		}
+		.content {
+			width: 650px;
+			margin: auto;
+			border: 1px solid red;
+		}
+		.content img {
+			border-radius: 20px;
+			filter: drop-shadow(5px 5px 5px #727272);
+		}
+		.content > :nth-child(3) {
+			text-align: center;
+			color: #a1a1a1;
+		}
+		.content > :nth-child(4) {
+			border-left: 1px solid orange;
+			padding: 0;
+			margin: 20px 0;
+		}
+		.content > :nth-child(4) p,
+		a {
+			padding: 0;
+			margin: 0;
+		}
+	</style>
 	<body>
 		<div class="banner">
 			<img
@@ -32,12 +80,13 @@
 				src="day2focacca.png"
 				alt="focaccia" />
 			<p>Image: Sally Vegas</p>
-
-			<p>FEATURED IN:</p>
-			<a
-				href="https://www.simplyrecipes.com/recipes/focaccia_with_caramelized_onions_cranberries_and_brie/">
-				> Fresh Cranberry Recipes That Go Beyond Sauce
-			</a>
+			<div>
+				<p>FEATURED IN:</p>
+				<a
+					href="https://www.simplyrecipes.com/recipes/focaccia_with_caramelized_onions_cranberries_and_brie/">
+					> Fresh Cranberry Recipes That Go Beyond Sauce
+				</a>
+			</div>
 			<h2>Ingredients</h2>
 			<h3>For the focaccia:</h3>
 			<ul>
