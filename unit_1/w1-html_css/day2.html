@@ -11,54 +11,55 @@
 		body {
 			margin: 0;
 			width: 100%;
+			& a {
+				color: darkcyan;
+			}
 		}
-		a {
-			color: darkcyan;
-		}
-		.banner {
+
+		& .banner {
 			text-align: center;
-			& img {
+			> img {
 				width: 200px;
 			}
-			& p {
+			> p {
 				border-top: 1px solid orange;
 				background-color: lightyellow;
 				padding: 10px 0;
 				color: green;
-				& span {
+				> span {
 					font-weight: bold;
 				}
 			}
 		}
 
-		.content {
+		& .content {
 			width: 650px;
 			margin: 50px auto 0;
-			& h1 {
+			> h1 {
 				text-align: center;
 				line-height: 30px;
 				margin-bottom: 30px;
 			}
-			& img {
+			> img {
 				max-width: 100%;
 				border-radius: 10px;
 				filter: drop-shadow(5px 5px 5px #8b8b8b);
 			}
-			& p span {
+			> span {
 				display: block;
 				text-align: center;
 				color: #8b8b8b;
 			}
-			& div {
+			> div {
 				border-left: 1px solid orange;
 				padding-left: 10px;
 				margin: 30px auto 50px;
-				& p {
+				> p {
 					color: darkorange;
 					margin: 0px;
 				}
 			}
-			& h2 {
+			> h2 {
 				padding-bottom: 20px;
 				margin: 20px auto;
 				border-bottom: 1px solid cyan;
@@ -66,8 +67,8 @@
 			& li {
 				padding: 5px 0;
 			}
-			& ol h3,
-			ol p {
+			& li > h3,
+			ol > p {
 				margin: 5px 0;
 			}
 		}

@@ -9,54 +9,72 @@
 		<style>
 			html {
 				background-color: #1f2937;
-			}
-			body {
-				margin: auto;
-				width: 80%;
-				color: white;
-				background-color: #eaeded;
+				& body {
+					margin: auto;
+					width: 70%;
+					color: white;
+					background-color: #eaeded;
+				}
 			}
 			.banner {
 				width: 100%;
 				background-color: #222f3e;
+				& img {
+					width: 100px;
+					padding: 5px 20px;
+				}
+				& nav {
+					width: 100%;
+					background-color: #354758;
+					display: flex;
+					& p {
+						margin: 5px 0 5px 20px;
+					}
+				}
 			}
-			.banner img {
-				width: 100px;
-				padding: 10px;
-				margin-left: 20px;
-			}
-			nav {
-				width: 100%;
-				background-color: #354758;
-				display: flex;
-			}
-			nav p {
-				margin: 5px 20px;
-			}
+
 			.content {
 				text-align: center;
-			}
-			.content * {
-				margin: 20px;
-			}
-			.content p:first-child {
-				background-color: darkorange;
-				padding: 5px;
-			}
-			.content > div:nth-child(2) {
-				background-image: url(./assets/day3/day3bg-image.png);
-				padding: 40px;
-			}
-			.content > div:nth-child(3) {
-				color: black;
-				text-align: left;
-				background-color: white;
-			}
-			div {
-				border: 1px solid red;
-			}
-			img {
-				width: 100px;
+				& > * {
+					margin: 20px;
+				}
+				& > p {
+					background-color: darkorange;
+					padding: 5px;
+				}
+				& > div:nth-of-type(1) {
+					background-image: url(./assets/day3/day3bg-image.png);
+					padding: 25px;
+				}
+				& h4 {
+					margin: 0;
+					padding: 0 0 10px 10px;
+					color: black;
+					& a {
+						text-decoration: unset;
+						color: darkcyan;
+						padding-left: 15px;
+					}
+				}
+				& > div:nth-of-type(2) {
+					text-align: left;
+					background-color: white;
+					padding: 15px 0;
+					& div {
+						display: flex;
+						justify-content: space-evenly;
+						& img {
+							height: 350px;
+							width: 290px;
+							object-fit: cover;
+							border-radius: 25px;
+							filter: drop-shadow(5px 5px 5px rgb(136, 136, 136));
+						}
+					}
+				}
+				& > div > img {
+					width: 100%;
+				}
 			}
 		</style>
 	</head>
@@ -91,32 +109,41 @@
 					Find the perfect gift
 					<a href="https://www.amazon.com/"><span>Shop now</span></a>
 				</h4>
-				<img
-					src="./assets/day3/day3img_1.jpg"
-					alt="img1" />
-				<img
-					src="./assets/day3/day3img_2.jpg"
-					alt="img2" />
-				<img
-					src="./assets/day3/day3img_3.jpg"
-					alt="img3" />
-				<img
-					src="./assets/day3/day3img_4.jpg"
-					alt="img4" />
+				<div>
+					<img
+						src="./assets/day3/day3img_1.jpg"
+						alt="img1" />
+					<img
+						src="./assets/day3/day3img_2.jpg"
+						alt="img2" />
+					<img
+						src="./assets/day3/day3img_3.jpg"
+						alt="img3" />
+					<img
+						src="./assets/day3/day3img_4.jpg"
+						alt="img4" />
+				</div>
 			</div>
 
-			<div class="content_games">
+			<div>
 				<img
 					src="./assets/day3/day3img_5.png"
 					alt="pic9" />
-				<h4>Play the gifting game <span>Shop gaming</span></h4>
+				<h4>
+					Play the gifting game
+					<a href="https://www.amazon.com/">Shop gaming</a>
+				</h4>
 			</div>
 
-			<div class="content_cheers">
+			<div>
 				<img
 					src="./assets/day3/day3img_6.png"
 					alt="pic9" />
-				<h4>The sound of cheer<span>Shop Audio & Accessories</span></h4>
+				<h4>
+					The sound of cheer<a href="https://www.amazon.com/"
+						>Shop Audio & Accessories</a
+					>
+				</h4>
 			</div>
 		</div>
 
