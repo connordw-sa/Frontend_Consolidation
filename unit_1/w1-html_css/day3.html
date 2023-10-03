@@ -9,71 +9,92 @@
 		<style>
 			html {
 				background-color: #1f2937;
-				& body {
+				> body {
 					margin: auto;
 					width: 70%;
 					color: white;
 					background-color: #eaeded;
 				}
 			}
-			.banner {
-				width: 100%;
+
+			& .banner {
 				background-color: #222f3e;
+				> nav {
+					width: 100%;
+					background-color: #354758;
+					display: flex;
+					> p {
+						margin: 5px 0 5px 20px;
+					}
+				}
 				& img {
 					width: 100px;
 					padding: 5px 20px;
 				}
-				& nav {
-					width: 100%;
-					background-color: #354758;
-					display: flex;
-					& p {
-						margin: 5px 0 5px 20px;
-					}
-				}
 			}
 
-			.content {
+			& .content {
 				text-align: center;
-				& > * {
+				> * {
 					margin: 20px;
 				}
-				& > p {
+				> p {
 					background-color: darkorange;
 					padding: 5px;
 				}
-				& > div:nth-of-type(1) {
-					background-image: url(./assets/day3/day3bg-image.png);
-					padding: 25px;
+				& img {
+					width: 100%;
 				}
 				& h4 {
 					margin: 0;
-					padding: 0 0 10px 10px;
+					padding-left: 10px;
 					color: black;
-					& a {
-						text-decoration: unset;
+					> a {
+						text-decoration: none;
 						color: darkcyan;
 						padding-left: 15px;
 					}
 				}
-				& > div:nth-of-type(2) {
-					text-align: left;
-					background-color: white;
-					padding: 15px 0;
-					& div {
-						display: flex;
-						justify-content: space-evenly;
-						& img {
-							height: 350px;
-							width: 290px;
-							object-fit: cover;
-							border-radius: 25px;
-							filter: drop-shadow(5px 5px 5px rgb(136, 136, 136));
-						}
+			}
+
+			& .div_gifts {
+				background-image: url(./assets/day3/day3bg-image.png);
+				padding: 25px;
+			}
+
+			& .div_pics {
+				text-align: left;
+				background-color: white;
+				padding: 15px;
+				> h4 {
+					margin-bottom: 10px;
+				}
+				> div {
+					display: flex;
+					justify-content: space-between;
+					> img {
+						height: 350px;
+						width: 290px;
+						object-fit: cover;
+						border-radius: 25px;
+						filter: drop-shadow(5px 5px 5px rgb(136, 136, 136));
 					}
 				}
-				& > div > img {
+			}
+
+			& .footer {
+				background-color: #222f3e;
+				text-align: center;
+				> a {
+					display: block;
+					background-color: #354758;
 					width: 100%;
+					padding: 10px;
+					color: white;
+				}
+				> img {
+					width: 150px;
+					padding: 50px;
 				}
 			}
 		</style>
@@ -99,15 +120,15 @@
 		<div class="content">
 			<p>Shop All Holiday Gift Cards</p>
 
-			<div>
+			<div class="div_gifts">
 				<h1>Holiday Gift Guides</h1>
 				<p>Be a go-gifter</p>
 			</div>
 
-			<div>
+			<div class="div_pics">
 				<h4>
 					Find the perfect gift
-					<a href="https://www.amazon.com/"><span>Shop now</span></a>
+					<a href="https://www.amazon.com/">Shop now</a>
 				</h4>
 				<div>
 					<img
@@ -148,7 +169,7 @@
 		</div>
 
 		<div class="footer">
-			<a href="#top"><p>Back to top</p></a>
+			<a href="#top">Back to top</a>
 			<img
 				src="./assets/day3/day3logo.png"
 				alt="logo" />
